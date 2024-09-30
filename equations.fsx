@@ -36,7 +36,6 @@ let phi2 x = x - f2 x / f2' x
 let phi3 x = x - f3 x / f3' x 
 
 let main () =
-    printfn "----------------------------------------"
     printfn "| № Eq | Dichotomy |  Iters  | Newthon |"
     printfn "----------------------------------------"
     printfn "|   1  |   %-8.4f| %7.4f | %7.4f |" (dichotomy f1 1.0 2.0 eps) (iterations phi1 1.0 eps) (newton f1 f1' 1.0 eps)
